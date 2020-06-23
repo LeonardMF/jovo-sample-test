@@ -29,7 +29,20 @@ app.setHandler({
   },
 
   HelloWorldIntent() {
-    this.ask("Hello World! What's your name?", 'Please tell me your name.');
+
+    if (typeof this.$user.$data.test_flag === 'undefined'){
+      console.log('test_flag is', this.$user.$data.test_flag);
+      this.ask('test_flag is undefined');
+    } else {
+
+      if (this.$user.$data.test_flag){
+        console.log('test_flag is', this.$user.$data.test_flag);
+        this.ask('test_flag is true');
+      } else {
+        console.log('test_flag is', this.$user.$data.test_flag);
+        this.ask('test_flag is false');
+      }
+    }
   },
 
   MyNameIsIntent() {

@@ -9,13 +9,30 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
   const testSuite = p.makeTestSuite();
 
   describe(`PLATFORM: ${p.constructor.name} INTENTS`, () => {
-    test('should return a welcome message and ask for the name at "LAUNCH"', async () => {
-      const conversation = testSuite.conversation();
+    test('test flag should be true', async () => {
+      const conversation = testSuite.conversation({runtime: 'app'});
+  
+      conversation.$user.$data.test_flag = true;
 
-      const launchRequest = await testSuite.requestBuilder.launch();
+      const launchRequest = await testSuite.requestBuilder.intent('HelloWorldIntent');
+
+      const response = await conversation.send(launchRequest);
+      
+      expect(response.getSpeech()).toMatch('test_flag is true');
+    });
+  });
+
+  describe(`PLATFORM: ${p.constructor.name} INTENTS`, () => {
+    test('test flag should be false', async () => {
+      const conversation = testSuite.conversation({runtime: 'app'});
+      
+      conversation.$user.$data.test_flag = false;
+
+      const launchRequest = await testSuite.requestBuilder.intent('HelloWorldIntent');
+
       const response = await conversation.send(launchRequest);
 
-      expect(response.isAsk("Hello World! What's your name?", 'Please tell me your name.')).toBeTruthy();
+      expect(response.getSpeech()).toMatch('test_flag is false');
     });
   });
 }

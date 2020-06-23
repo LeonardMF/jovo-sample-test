@@ -3,10 +3,17 @@
 // ------------------------------------------------------------------
 
 module.exports = {
-  logging: true,
+  logging: false,
 
   intentMap: {
     'AMAZON.StopIntent': 'END',
+  },
+
+  user: {
+    dataCaching: true,
+    metaData: {
+        enabled: true,
+    },
   },
 
   db: {

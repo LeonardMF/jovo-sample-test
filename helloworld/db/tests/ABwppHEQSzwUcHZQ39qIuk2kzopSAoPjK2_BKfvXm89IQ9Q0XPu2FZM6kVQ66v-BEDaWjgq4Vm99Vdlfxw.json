@@ -1,0 +1,26 @@
+{
+	"userData": {
+		"data": {},
+		"metaData": {
+			"createdAt": "2020-06-23T13:54:06.529Z",
+			"sessionsCount": 0,
+			"lastUsedAt": "2020-06-23T13:54:06.536Z",
+			"requests": {
+				"HelloWorldIntent": {
+					"count": 2,
+					"log": [
+						"2020-06-23T13:54:06.530Z",
+						"2020-06-23T13:54:06.536Z"
+					]
+				}
+			},
+			"devices": {
+				"undefined": {
+					"hasAudioInterface": true,
+					"hasScreenInterface": false,
+					"hasVideoInterface": false
+				}
+			}
+		}
+	}
+}
