@@ -1,0 +1,27 @@
+{
+	"userData": {
+		"data": {
+			"test_flag": true
+		},
+		"metaData": {
+			"createdAt": "2020-06-29T13:03:05.249Z",
+			"lastUsedAt": "2020-06-29T13:03:05.249Z",
+			"sessionsCount": 0,
+			"requests": {
+				"HelloWorldIntent": {
+					"count": 1,
+					"log": [
+						"2020-06-29T13:03:05.249Z"
+					]
+				}
+			},
+			"devices": {
+				"amzn1.ask.device.XXXXXA6LX6BOBJF6XNWQM2ZO4NVVGZRFFEL6PMXKWLOHI36IY3B4XCSZKZPR42RAWCBSQEDNGS746OCC2PKR5KDIVAUY6F2DX5GV2SQAXPD7GMKQRWLG4LFKXFPVLVTXHFGLCQKHB7ZNBKLHQU4SJG6NNGA": {
+					"hasAudioInterface": true,
+					"hasScreenInterface": false,
+					"hasVideoInterface": false
+				}
+			}
+		}
+	}
+}

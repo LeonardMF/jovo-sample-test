@@ -1,18 +1,17 @@
 {
 	"userData": {
-		"data": {},
+		"data": {
+			"test_flag": false
+		},
 		"metaData": {
-			"createdAt": "2020-06-23T13:54:06.529Z",
+			"createdAt": "2020-06-29T13:03:05.266Z",
+			"lastUsedAt": "2020-06-29T13:03:05.266Z",
 			"sessionsCount": 0,
-			"lastUsedAt": "2020-06-26T09:15:15.068Z",
 			"requests": {
 				"HelloWorldIntent": {
-					"count": 10,
+					"count": 1,
 					"log": [
-						"2020-06-26T09:14:58.226Z",
-						"2020-06-26T09:14:58.233Z",
-						"2020-06-26T09:15:15.056Z",
-						"2020-06-26T09:15:15.068Z"
+						"2020-06-29T13:03:05.266Z"
 					]
 				}
 			},
