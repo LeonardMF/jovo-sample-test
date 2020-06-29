@@ -7,6 +7,20 @@ Created with `jovo new`. Than edit to use [User Data](https://www.jovo.tech/docs
 - Node v12
 - Jovo CLI Version: 3.0.15
 
+## Update 
+Works again with new Jovo version: 
+
+        Jovo packages of current project:
+            jovo-core: 3.0.17
+            jovo-db-filedb: 3.0.18
+            jovo-framework: 3.0.19
+            jovo-platform-alexa: 3.0.22
+            jovo-platform-dialogflow: 3.0.17
+            jovo-platform-googleassistant: 3.0.19
+            jovo-plugin-debugger: 3.0.17
+
+Just run `jovo update` to get new version.
+
 ## Reproduce the Error
 
 1. Change Directory: 
