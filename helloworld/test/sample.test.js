@@ -14,6 +14,20 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
   
       conversation.$user.$data.test_flag = true;
 
+      const launchRequest = await testSuite.requestBuilder.launch();
+
+      const response = await conversation.send(launchRequest);
+      
+      console.log(response);
+    });
+  });
+
+  xdescribe(`PLATFORM: ${p.constructor.name} INTENTS`, () => {
+    test('test flag should be true', async () => {
+      const conversation = testSuite.conversation({runtime: 'app'});
+  
+      conversation.$user.$data.test_flag = true;
+
       const launchRequest = await testSuite.requestBuilder.intent('HelloWorldIntent');
 
       const response = await conversation.send(launchRequest);
@@ -22,7 +36,7 @@ for (const p of [new Alexa(), new GoogleAssistant()]) {
     });
   });
 
-  describe(`PLATFORM: ${p.constructor.name} INTENTS`, () => {
+  xdescribe(`PLATFORM: ${p.constructor.name} INTENTS`, () => {
     test('test flag should be false', async () => {
       const conversation = testSuite.conversation({runtime: 'app'});
       

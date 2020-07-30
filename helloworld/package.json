@@ -4,6 +4,8 @@
   "description": "A sample voice app that works with the Jovo Framework",
   "main": "src/index.js",
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "jovo-community-plugin-sentry": "^1.5.1",
     "jovo-core": "^3.0.17",
     "jovo-db-filedb": "^3.0.18",
     "jovo-framework": "^3.0.19",

@@ -21,4 +21,13 @@ module.exports = {
       pathToFile: '../db/db.json',
     },
   },
+
+  plugin: {
+    SentryPlugin: {
+        dsn: process.env.SENTRY_DSN, // or set SENTRY_DSN
+        environment: process.env.SENTRY_ENVIRONMENT, //or set SENTRY_ENVIRONMENT
+        debug: true,
+        release: 'voice-app@1.0.0', //or set SENTRY_RELEASE
+    },
+  },  
 };
